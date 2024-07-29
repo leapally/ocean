@@ -51,7 +51,7 @@ runs:
       id: restore-build
       uses: actions/cache/restore@v4
       with:
-        key: build-${{ steps.config-case.outputs.lowercase }}-${{ github.sha }}
+        key: ocean-build-${{ steps.config-case.outputs.lowercase }}-${{ github.sha }}
         path: ${{ inputs.build-path }}
 
     - name: Run tests
